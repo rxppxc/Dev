@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Calculadora IMC</h1>
+
+
+    <div id="calculadora">
+
+        <input type="number" id="weight" placeholder="peso (kg)">
+
+        <br>
+        <br>
+        <br>
+
+        <input type="number" id="height" placeholder="Altura (m)" step="0.01">
+
+        <br>
+        <br>
+        <br>
+
+        <button onclick="calculateIMC()">Calcular IMC</button>
+
+        <div id="result"></div>
+
+    </div>
+
+        <br>
+        <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Pongo de IMC</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Menos de 18.5</td>
+                <td>Bajo peso</td>
+            </tr>
+
+            <tr>
+                <td>18.5 -24.9</td>
+                <td>Peso normal</td>
+            </tr>
+
+            <tr>
+                <td>25 - 29.9</td>
+                <td>Sobrepeso</td>
+            </tr>
+
+            <tr>
+                <td>30 o mas</td>
+                <td>Obesidad</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <p>♠ El sobrepeso puede causar la elevación de la concentración de colesterol total. ♠ la presión arterial. ♠
+    aumentar el riesgo de sufrir la enfermedad arterial coronaria. ♠ presión arterial alta. ♠ colesterol elevado
+    ♠ diabetes.</p>
+   
+
+    </div>
+
+    <script src="Script.js"></script>
+
+</body>
+</html>
